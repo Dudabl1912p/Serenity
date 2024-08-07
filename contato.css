@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: url('tea-1869716_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(10, 10, 10, 0.852); 
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Licorice", cursive;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li svg {
+    width: 15px;
+    height: 15px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.auth-buttons .cadastro {
+    background-color: #555;
+    color: white;
+}
+
+.cadastro a{
+    text-decoration: none;
+    color: white;
+}
+
+.auth-buttons .login {
+    background-color: white;
+    color: #333;
+}
+
+.login a{
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 800px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact-form button {
+    width: 20%; 
+    padding: 10px 20px; 
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px; 
+    align-self: center;  
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form textarea {
+    height: 100%;
+    resize: vertical;
+}

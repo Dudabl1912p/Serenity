@@ -1,0 +1,33 @@
+#drop-click { position: relative;}
+
+#dropdown-click{ position: absolute;
+    width: 150%;
+    list-style: none;
+    padding: 0;
+    opacity: 0;
+    color: white;
+    top: 80px;
+    height: 200px;
+    margin-top: 3px;
+    z-index: -10;
+    transition: 0.5s
+}
+
+#dropdown-click input{
+    border-radius: 5px;
+}
+
+#check { 
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left: 0;
+    opacity: 0;
+}
+    
+#check:checked~#dropdown-click{
+    opacity: 1;
+    z-index: 20;
+    top: -6px;
+    left: 25px; 
+}
